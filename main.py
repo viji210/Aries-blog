@@ -20,7 +20,7 @@ ckeditor = CKEditor(app)
 Bootstrap(app)
 
 # # CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL", 'sqlite:///blog.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL", "sqlite:///blog.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -79,7 +79,7 @@ class Comment(db.Model):
     blog = relationship("BlogPost", back_populates="blog_comments")
 
 
-# db.create_all()
+db.create_all()
 
 
 def send_mail(name, email, number, message):
