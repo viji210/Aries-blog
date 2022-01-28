@@ -81,7 +81,7 @@ class Comment(db.Model):
     blog = relationship("BlogPost", back_populates="blog_comments")
 
 
-# db.create_all()
+db.create_all()
 
 
 def send_mail(name, email, number, message):
