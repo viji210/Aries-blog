@@ -14,4 +14,4 @@
     It has a contact form in it which uses SMTPlib to send a email to myself with all the details that you have been entered in the form
 
 ## Depolyed on Heroku
-    this fully functional website is deployed and running on heroku here is the link to it https://aries-blog.herokuapp.com/
+    This fully functional website is deployed and running on heroku here is the link to it https://aries-blog.herokuapp.com/ You can go here and admire my work
